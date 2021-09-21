@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Landing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td style="vertical-align: bottom;">
+                    <table class="nav-table">
+                        <tbody>
+                            <tr>
+                                <td colspan=3>Components:</td>
+                            </tr>
+                            <tr>
+                                <td id="components-solarPanels"></td>
+                                <td colspan-2>Solar Panels</td>
+                            </tr>
+                            <tr>
+                                <td id="components-plutonium"></td>
+                                <td colspan-2>Plutonium</td>
+                            </tr>
+                            <tr>
+                                <td colspan=3>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan=3>Coordinates:</td>
+                            </tr>
+                            <tr>
+                                <td id="coordinates" colspan=3>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="old-button">N</button></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><button class="old-button">W</button></td>
+                                <td></td>
+                                <td><button class="old-button">E</button></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="old-button">S</button></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan=3>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan=3>Battery:</td>
+                            </tr>
+                            <tr>
+                                <td id="battery-remaining" colspan=3>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="command-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="command-history-div">
+                                        <table>
+                                            <tbody>
+                                                <!-- previous commands go here -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="command-input-div">
+                                        &gt;&gt;
+                                        <input type="text" name="command" id="command-input" maxlength=16>
+                                        <button class="button" id="command-submit">Submit</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

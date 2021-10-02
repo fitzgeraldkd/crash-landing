@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crash Landing</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <table>
@@ -19,11 +20,11 @@
                             </tr>
                             <tr>
                                 <td id="components-solarPanels"></td>
-                                <td colspan-2>Solar Panels</td>
+                                <td colspan=2>Solar Panels</td>
                             </tr>
                             <tr>
                                 <td id="components-plutonium"></td>
-                                <td colspan-2>Plutonium</td>
+                                <td colspan=2>Plutonium</td>
                             </tr>
                             <tr>
                                 <td colspan=3>&nbsp;</td>
@@ -36,17 +37,17 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><button class="old-button">N</button></td>
+                                <td><button class="old-button" id="bttn-move-n">N</button></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><button class="old-button">W</button></td>
+                                <td><button class="old-button" id="bttn-move-w">W</button></td>
                                 <td></td>
-                                <td><button class="old-button">E</button></td>
+                                <td><button class="old-button" id="bttn-move-e">E</button></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><button class="old-button">S</button></td>
+                                <td><button class="old-button" id="bttn-move-s">S</button></td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -79,8 +80,10 @@
                                 <td>
                                     <div id="command-input-div">
                                         &gt;&gt;
-                                        <input type="text" name="command" id="command-input" maxlength=16>
-                                        <button class="button" id="command-submit">Submit</button>
+                                        <form id="command-form" action="javascript:void(0);">
+                                            <input type="text" name="command" id="command-input" maxlength=16>
+                                            <input type="submit" class="button" id="command-submit" value="[Submit]">
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
@@ -90,5 +93,6 @@
             </tr>
         </tbody>
     </table>
+    <script src="./dist/crashlanding.js"></script>
 </body>
 </html>

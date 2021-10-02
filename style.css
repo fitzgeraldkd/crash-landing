@@ -55,7 +55,7 @@
 }
 
 .command-submit {
-    align: right;
+    text-align: right;
 }
 
 input, form {
